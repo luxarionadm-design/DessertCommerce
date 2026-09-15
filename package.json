@@ -1,0 +1,72 @@
+{
+	"name": "dessert-commerce",
+	"version": "0.1.0",
+	"description": "A commerce engine for JavaScript. Accounting, ledger, reporting, and API SDK.",
+	"author": "luxarionadm-design",
+	"license": "MIT",
+	"type": "module",
+	"main": "./src/Dessert.js",
+	"module": "./src/Dessert.js",
+	"exports": {
+		".": {
+			"import": "./src/Dessert.js",
+			"default": "./src/Dessert.js"
+		},
+		"./core": "./src/Dessert.Core.js",
+		"./legacy": "./src/Dessert.Legacy.js",
+		"./sdk": "./src/Dessert.SDK.js",
+		"./math": "./src/math/Maths.js",
+		"./accounting": "./src/accounting/Accountings.js",
+		"./report": "./src/report/Reports.js",
+		"./network": "./src/network/Network.js",
+		"./errors": "./src/errors/Errors.js",
+		"./entities": "./src/entities/Entities.js",
+		"./services": "./src/services/Services.js",
+		"./sdk/entities": "./src/sdk/entities/Entities.js",
+		"./sdk/services": "./src/sdk/services/Services.js",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"src",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
+	"sideEffects": false,
+	"keywords": [
+		"commerce",
+		"accounting",
+		"ledger",
+		"journal",
+		"invoice",
+		"payment",
+		"transaction",
+		"sdk",
+		"money",
+		"currency"
+	],
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"scripts": {
+		"test": "node --test test/",
+		"test:math": "node test/test-math.js",
+		"test:accounting": "node test/test-accounting.js",
+		"test:report": "node test/test-report.js",
+		"test:network": "node test/test-network.js",
+		"test:sdk": "node test/test-sdk.js",
+		"test:commerce": "node test/test-commerce.js"
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"peerDependencies": {},
+	"optionalDependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/luxarionadm-design/DessertCommerce.git"
+	},
+	"bugs": {
+		"url": "https://github.com/luxarionadm-design/DessertCommerce/issues"
+	},
+	"homepage": "https://github.com/luxarionadm-design/DessertCommerce#readme"
+}
